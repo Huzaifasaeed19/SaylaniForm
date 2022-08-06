@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Form</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="logo.png" alt="Logo" width="450">
+    </div>
+    <h1 align="center">Saylani Online Acadmey</h1>
+    <fieldset style="margin:auto; width:600px; background-color: rgba(96, 121, 81, 0.562);">
+        <h2 align="center">Student Registration Form</h2>
+        <form action="Application_Submitted.html" method="GET">
+            <table >
+                <tr>
+                    <td>
+                        <span><b>Name:</b></span>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name" placeholder="Your Name" size="40" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Father Name:</b></span>
+                    </td>
+                    <td>
+                        <input type="text" name="Fname" id="Fname" placeholder="Your Father Name" size="40" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Password:</b></span>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password" placeholder="Enter Password" size="40"
+                            required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Address:</b></span>
+                    </td>
+                    <td>
+                        <textarea name="Address" id="Address" cols="40" rows="5" placeholder="Enter Your Address"
+                            required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Gender:</b></span>
+                    </td>
+                    <td>
+                        <input type="radio" name="Gender" id="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" name="Gender" id="female" required>
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Language:</b></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Language" id="Urdu">
+                        <label for="Urdu">Urdu</label>
+                        <input type="checkbox" name="Language" id="English">
+                        <label for="English">English</label>
+                        <input type="checkbox" name="Language" id="Arabic">
+                        <label for="Arabic">Arabic</label>
+                        <input type="checkbox" name="Language" id="Chinese">
+                        <label for="Chinese">Chinese</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>DOB:</b></span>
+                    </td>
+                    <td>
+                        <input type="date" name="DOB" id="DOB" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Email ID:</b></span>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" size="40" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Mobile No:</b></span>
+                    </td>
+                    <td>
+                        <input type="number" name="ContactNo" id="ContactNo" placeholder="Enter Your Contact No:"
+                            required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>City:</b></span>
+                    </td>
+                    <td>
+                        <select name="City" id="City" required>
+                            <option value="Null" selected disabled>Select Your City</option>
+                            <optgroup label="Sindh">
+                                <option value="Karachi">Karachi</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="NawabShah">Nawabshah</option>
+                            </optgroup>
+                            <optgroup label="Punjab">
+                                <option value="Mutlan">Multan</option>
+                                <option value="Lahore">Lahore</option>
+                                <option value="Faisalabad">Faisalabad</option>
+                            </optgroup>
+                            <optgroup label="KPK">
+                                <option value="Peshawar">Peshawar</option>
+                                <option value="Bani Gala">Bani Gala</option>
+                                <option value="Abottabbad">Abottabad</option>
+                            </optgroup>
+                            <optgroup label="Balochistan">
+                                <option value="Quetta">Quetta</option>
+                                <option value="Chaman">Chaman</option>
+                                <option value="Gawadar">Gawadar</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Hobbies:</b></span>
+                    </td>
+                    <td>
+                        <select name="City" id="City" required multiple size="3">
+                            <option value="Null" selected disabled>Select Your Hobbies</option>
+                            <option value="Teniss">Teniss</option>
+                            <option value="Hockey">Hockey</option>
+                            <option value="Football">Football</option>
+                            <option value="Cricket">Cricket</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Picture Upload:</b></span>
+                    </td>
+                    <td>
+                        <input type="file" name="image" id="image" accept="image/*" required>
+                    </td>
+                    <td>
+                        <input type="button" value="Upload">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="submit" value="Submit Form">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>
